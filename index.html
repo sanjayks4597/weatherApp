@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <header class="page-header">
+
+        <div class="header-contents-container">
+            <a href="#" class="brand">Weather</a>
+            <nav class="header-nav">
+                <ul>
+                    <li>Overview</li>
+                    <li>Features</li>
+                    <li>Examples</li>
+                    <li>Pricing</li>
+                </ul>
+            </nav>
+            <div class="login-signup">
+                <div class="login-div">
+                    <button class="signin">Sign In</button>
+                </div>
+                <div class="signup-div">
+                    <button class="signup">Sign Up Free</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="check-weather">
+            <h1>Check What is Special in Today's Weather ?</h1>
+            <div class="weather-checking-box">
+                <div class="location-search-box">
+                    <form  class="location-form">
+                        <div class="location-form-heading">
+                            <h1 class="content">CONTINENT</h1>
+                            
+                        </div>
+                        
+                        <label>LOCATION(ZIP CODE,CITY,COORDINATES)</label>
+                        <input type="text" class="search-box" placeholder="Enter Location" required>
+                        <label>LANGUAGE</label>
+                        <select class="dropdown">
+                            <option value="ENGLISH">ENGLISH</option>
+                            
+                        </select>
+                        <label>TEMPERATURE UNIT</label>
+                        <div class="temp-unit">
+                            <button type="submit"  class="celcius-unit" onclick="celcius(event)">°C</button>
+                            <button type="submit"  class="fahrenheit-unit" onclick="fahrenheit(event)">°F</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="weather-datails-box">
+                    <div class="today-report">
+                        <div class="location-cloud-report">
+                            <div class="location-and-temp">
+                                <h3 class="day">Monday</h3>
+                                
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h3 class="exact-location">Ahmedabad, IN</h3>
+                                </div>
+                                <div class="temp">
+                                    <h1>+75 °F</h1>
+                                </div>
+                            </div>
+                            <div class="cloud-report">
+                                  <img src="http://openweathermap.org/img/wn/10d@2x.png">
+                                <h3>Broken clouds</h3>
+                            </div>
+                      </div>
+                      <div class="extra-details">
+                          <div class="wind">
+                              <div class="wind-heading">
+                                <i class="fas fa-wind"></i>
+                                <h2>WIND</h2>
+                              </div>
+                              <div class="wind-data">
+                                <h4>5 KM/HR</h4>
+                              </div>
+                          </div>
+                          <div class="humidity">
+                            <div class="humidity-heading">
+                              <i class="fas fa-water"></i>
+                              <h2>HUMIDITY</h2>
+                            </div>
+                            <div class="humidity-data">
+                                <h4>84 %</h4>
+                            </div>
+                        </div>
+                        <div class="visibility">
+                            <div class="visibility-heading">
+                              <i class="fas fa-eye"></i>
+                              <h2>VISIBILITY</h2>
+                            </div>
+                            <div class="visibility-data">
+                                <h4>500 METER</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="pressure">
+                            <div class="pressure-heading">
+                              <i class="fas fa-temperature-high"></i>
+                              <h2>PRESSURE</h2>
+                            </div>
+                            <div class="pressure-data">
+                                <h4>1005 mb</h4>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="next-day-report">
+                        <div class="today">
+                            <div class="date-and-day">
+                                <h2 class="unhighlited">July 29</h2>
+                                <h2>Today</h2>
+                            </div>
+                            <div class="temp1">
+                                <h2>+76 °F</h2>
+                            </div>
+                        </div>
+                        <div class="tomorrow">
+                            <div class="date-and-day">
+                                <h2 class="unhighlited">July 30</h2>
+                                <h2 >Tomorrow</h2>
+                            </div>
+                            <div class="temp1">
+                                <h2>+76 °F</h2>
+                            </div>
+                        </div>
+                        <div class="day-after-tomorrow">
+                            <div class="date-and-day">
+                                <h2 class="unhighlited">July 31</h2>
+                                <h2>Day After Tomorrow</h2>
+                            </div>
+                            <div class="temp1">
+                                <h2>+76 °F</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="index.js">
+    </script>
+</body>
+</html>

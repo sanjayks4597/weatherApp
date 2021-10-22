@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.page-header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+
+    justify-content: center;
+    background:rgba(17,17,17,.85);
+}
+.page-header .header-contents-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+.header-contents-container .brand{
+    width: 33.33%;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+.header-contents-container .header-nav{
+    width: 33.33%;
+    height: 100%;
+    
+}
+.header-contents-container .header-nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    height: 100%;
+    
+    
+
+}
+.header-contents-container .header-nav ul > li{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.2em;
+    
+}
+
+.header-contents-container .header-nav ul > li:hover{
+    cursor: pointer;
+    border-bottom: 5px solid;
+    background-color: #f7b42c;
+    background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    
+    
+}
+.login-signup{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    column-gap: 6px;
+    justify-content: center;
+    place-items: center;
+
+}
+.login-signup .login-div, .login-signup .signup-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    
+}
+.login-div .signin {
+    width: 12em;
+    display: inline-block;
+    color: #111;
+    height: 36px;
+    font-size: 15px;
+    border: 1px solid #111;;
+    padding:0 22px;
+    border-radius: 40px;
+    transition:all 0.3s ease ;
+    transform: translateY(0);
+}
+.signup-div .signup{
+    width: 12em;
+    display: inline-block;
+    color: #111;
+    height: 36px;
+    font-size: 15px;
+    border: 1px solid #111;;
+    padding:0 22px;
+    border-radius: 40px;
+    transition:all 0.3s ease ;
+    transform: translateY(0);
+}
+.login-div .signin:hover{
+    cursor: pointer;
+    text-decoration: 2px solid orange underline;
+}
+.signup-div .signup:hover{
+    cursor: pointer;
+    text-decoration: 2px solid orange underline;
+}
+
+.login-signup .signup-div:hover{
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+}
+main .check-weather{
+    width: 100%;
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+    background-color: #111;
+}
+.check-weather >h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin: 3em;
+}
+
+.weather-checking-box{
+    width: 60%;
+    height: 60vh;
+    
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    column-gap: 50px;
+}
+.weather-checking-box .location-search-box,
+ .weather-checking-box .weather-datails-box{
+    
+     width: 50%;
+ }
+ .weather-datails-box {
+     border-radius: 25px;
+     position: relative;
+     transition: 0.5s ease;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+ .weather-datails-box:hover{
+     transform: scale(1.05);
+     
+ }
+ .weather-checking-box .location-search-box{
+    height: 80%;
+    transition: 0.5s ease;
+    border-radius: 25px;
+ }
+ .location-search-box:hover{
+    transform: scale(1.05);
+ }
+ .location-search-box .location-form{
+    
+     width: 100%;
+     height: 100%;
+     border-radius: 25px;
+     display: flex;
+     flex-direction: column;
+     background-color: gray;
+ }
+ .location-form-heading{
+     width: 100%;
+     height: 3em;
+     display: flex;
+     background-color: transparent;
+     border-bottom: 3px solid black;
+     
+ }
+.location-form .location-form-heading > h1{
+     position: absolute;
+     font-size: 20px;
+     font-weight: 600;
+     text-align: left;
+     padding-left: 25px;
+     padding-right: 12px;
+     padding-top: 10px;
+     color: white;
+     
+     
+ }
+ .location-form .location-form-heading .content{
+    border-bottom: 2px solid;
+    height: 2.3em;
+    border-top-left-radius: 25px;
+    
+   
+ }
+ .location-form .location-form-heading .content:hover
+ {
+     cursor: pointer;
+ }
+ .location-form > label{
+     margin-top: 25px;
+     text-align: left;
+     font-weight: 300;
+     padding-left: 25px;
+     color: white;
+ }
+ .location-form >input ,
+ .location-form .dropdown{
+     width: 85%;
+     margin-left: 25px;
+     margin-top: 8px;
+     border-radius: 5px;
+     height: 35px;
+     color: white;
+     font-size: 18px;
+     padding-left: 3px;
+     background-color: rgb(76, 69, 69);
+ }
+
+ .temp-unit{
+     width: 85%;
+     margin-top: 8px;
+     height: 35px;
+     display: flex;
+     margin-left: 25px;
+ }
+ .temp-unit >button{
+     width: 50%;
+     font-weight: 700;
+     font-size: 20px;
+     font: 20px bolder;
+     border-radius: 5px;
+     color: white;
+     transition: 0.5s ease;
+     background-color:rgb(76, 69, 69); ;
+ }
+ .temp-unit >button:hover{
+     background-color: white;
+     transform: scale(1.05);
+     color: black;
+     cursor: pointer;
+ }
+ 
+ .weather-datails-box .today-report,
+ .weather-datails-box .next-day-report{
+     width: 100%;
+     height: 50%;
+     
+ }
+ .next-day-report{
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px ;
+ }
+ .weather-datails-box .today-report{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+     background-color: rgb(84, 84, 223);
+     
+ }
+ .today-report .location-cloud-report,
+ .today-report  .extra-details{
+     display: flex;
+     width: 100%;
+     height: 50%;
+     
+    
+ }
+ .extra-details{
+     
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     height: 100%;
+     justify-content: center;
+     place-items: center;
+ }
+ .extra-details >div{
+     width: auto;
+ }
+
+.extra-details .wind .wind-heading h2::before ,
+.extra-details .humidity .humidity-heading h2::before,
+.extra-details .visibility .visibility-heading h2::before,
+.extra-details .pressure .pressure-heading h2::before{
+   content: "";
+   position: absolute;
+   width: 25px;
+   height: 2px;
+   margin-left: 2px;
+   margin-top: 20px;
+   background: white;
+}
+
+
+ .location-cloud-report .location-and-temp,
+ .location-cloud-report .cloud-report{
+    width: 50%;
+    height: 100%;
+ }
+ .cloud-report i{
+     font-size: 45px;
+     color: white;
+ }
+ .location-cloud-report h3, h1{
+     color: white;
+ }
+ .location-cloud-report .location-and-temp{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     place-items: center;
+ }
+ .location-and-temp .day{
+     font-size: 25px;
+     margin-top: 12px;
+     padding: 3px;
+     margin-bottom: 5px;
+     color: white;
+     font-weight: 100;
+ }
+ .location-and-temp .location{
+     display: inline-flex;
+     padding-top: 8px;
+    
+ }
+ .location-and-temp .location i{
+     margin-right: 1vw;
+     color: white;
+     
+ }
+ .location h3{
+     font-size: 22px;
+     padding-bottom: 5px;
+ }
+
+ .location-cloud-report .cloud-report{
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     place-items: center;
+     
+ }
+.extra-details h2{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    color: white;
+
+}
+.extra-details i{
+    color: white;
+    font-size: 25px;
+}
+.extra-details h4{
+    color: white;
+}
+ .next-day-report{
+     width: 100%;
+     height: 100%;
+     background-color: white;
+
+ }
+ .next-day-report > div {
+     width: 100%;
+     height: 33.33%;
+     display: flex;
+ }
+ .date-and-day ,
+ .temp1{
+     width: 50%;
+     height: 100%;
+
+ } 
+ .next-day-report h2{
+     margin-top: 4px;
+     font-size: 15px;
+     font-weight: 500;
+     font: bolder;
+ }
+ .unhighlited{
+     color: gray;
+     font-size: 12px;
+ }
+ /* @media (max-width:1100px){
+    
+   
+     .weather-checking-box .location-search-box{
+         width: 95%;
+         transition: none;
+         height: 90%;
+     }
+   
+     
+ } */
