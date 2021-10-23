@@ -115,8 +115,9 @@ function getDateInformation()
         "Jul",
         "Aug",
         "Sep",
-        "Nov",
-        "Dec",
+        "oct",
+        "nov",
+        "dec"
     ];
     const days=[
         "Sunday",
